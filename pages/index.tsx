@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { useRouter } from 'next/router'
 
 import { Head } from '../components/Head'
 import { Card } from '../components/Card'
@@ -22,11 +23,12 @@ export async function getServerSideProps() {
 }
 
 const Home: NextPage<IHome> = ({ planetsData }) => {
+  const router = useRouter()
   return (
     <div>
       <Head />
       <Row>
-        {planetsData.map((planet) => (
+        {planetsData.map((planet, index) => (
           <Column
             key={planet.name}
             cursor="pointer"
@@ -34,7 +36,10 @@ const Home: NextPage<IHome> = ({ planetsData }) => {
             boxShadow="2px 2px 10px -4px #525354"
             mr="16px"
           >
-            <Card name={planet.name} />
+            <Card
+              onClick={() => router.push(`planet/${index}`)}
+              name={planet.name}
+            />
           </Column>
         ))}
       </Row>
