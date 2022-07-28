@@ -3,7 +3,7 @@ StarWars-SN
 An application using swapi(https://swapi.dev/), built with React, NextJs, TypeScript, and Style components.
 
 Project Status
-Working on it...
+`Working on it...`
 
 Installation and Setup Instructions
 
@@ -11,15 +11,15 @@ Clone down this repository. You will need node and npm/yarn installed globally o
 
 Installation:
 
-yarn install
+`yarn install`
 
 To Run Test Suite:
 
-yarn test
+`yarn test`
 
 To Start Server:
 
-yarn dev
+`yarn dev`
 
 To Visit App:
 
