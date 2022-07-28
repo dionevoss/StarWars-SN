@@ -12,6 +12,11 @@ const Card: FC<ICard> = ({ name, onClick }) => (
 
 const StyledCard = styled.div`
   padding: 16px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  &:hover {
+    background-color: #ededed;
+  }
 `
 
 export { Card }

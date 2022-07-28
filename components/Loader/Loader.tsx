@@ -1,21 +1,25 @@
 import { FC, memo } from 'react'
 import styled from 'styled-components'
 
+import { Row } from '../Grid'
+
 interface ILoader {
   size?: string
 }
 
 const Loader: FC<ILoader> = ({ size }) => (
-  <LoaderComponent
-    src="/loader.svg"
-    alt="carregando..."
-    width={size}
-    height={size}
-  />
+  <Row width="100%" height="90vh" alignItems="center" justifyContent="center">
+    <LoaderComponent
+      src="/loader.svg"
+      alt="carregando..."
+      width={size}
+      height={size}
+    />
+  </Row>
 )
 
 Loader.defaultProps = {
-  size: '40px',
+  size: '100px',
 }
 
 const LoaderComponent = styled.img`
