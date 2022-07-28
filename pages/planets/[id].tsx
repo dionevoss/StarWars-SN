@@ -4,6 +4,8 @@ import axios from 'axios'
 
 import { Loader } from '../../components/Loader'
 
+import { NextPage } from 'next'
+
 type TPlanetData = {
   name: string
   gravity: string
@@ -12,7 +14,7 @@ type TPlanetData = {
   diameter: string
 }
 
-const Planet = () => {
+const Planet: NextPage = () => {
   const [planetData, setPlanetData] = useState<TPlanetData>()
 
   const router = useRouter()

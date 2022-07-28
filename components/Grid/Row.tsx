@@ -20,7 +20,7 @@ import {
   ShadowProps,
 } from 'styled-system'
 
-export interface RowProps
+export interface IRow
   extends SpaceProps,
     LayoutProps,
     BorderProps,
@@ -33,7 +33,7 @@ export interface RowProps
   cursor?: string
 }
 
-const Row: FC<RowProps> = styled.div<RowProps>(
+const Row: FC<IRow> = styled.div<IRow>(
   { display: 'flex' },
   space,
   layout,

@@ -1,12 +1,20 @@
 import { FC } from 'react'
 import Head from 'next/head'
 
-const HeadComponent: FC = () => (
+interface IHeadComponent {
+  title?: string
+}
+
+const HeadComponent: FC<IHeadComponent> = ({ title }) => (
   <Head>
-    <title>Code Challenge</title>
-    <meta name="description" content="Code Challenge" />
+    <title>{title}</title>
+    <meta name="description" content={title} />
     <link rel="icon" href="/favicon.ico" />
   </Head>
 )
+
+HeadComponent.defaultProps = {
+  title: 'Star Wars SN',
+}
 
 export { HeadComponent }
