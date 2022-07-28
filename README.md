@@ -1,9 +1,9 @@
 StarWars-SN
 
-An application using swapi(https://swapi.dev/), built with React, NextJs, TypeScript, and Style components.
+An application using swapi(https://swapi.dev/), built with React, NextJs, TypeScript,Jest, React Testing Library and Style components.
 
 Project Status
-`Working on it...`
+Working on it...
 
 Installation and Setup Instructions
 
